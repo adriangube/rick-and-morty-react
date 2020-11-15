@@ -1,13 +1,12 @@
-@import "../styles/index.css";
+@import "../index.css";
 
 .Characters{
     overflow-y: scroll;
-    padding: 64px;
+    padding: 124px 64px 64px 64px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 50px;
     row-gap: 50px;
-    background-color: var(--background-color);
     box-sizing: border-box;
     min-height: 100vh;
 }

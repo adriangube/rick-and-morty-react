@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import {appService, charactersStateSelector} from "../application";
 import {useSelector} from "react-redux";
 import {CharacterCard} from "../components";
-import "./Characters..css";
+import "../styles/pages/Characters..css";
 
 export const Characters = () => {
 

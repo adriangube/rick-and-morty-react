@@ -1,4 +1,4 @@
-@import "../styles/index.css";
+@import "../index.css";
 
 .CharacterCard .CharacterCard__card{
     background-color: var(--secondary-background-color);

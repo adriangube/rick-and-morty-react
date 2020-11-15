@@ -1,7 +1,7 @@
 import {Card, CardActionArea, CardHeader, CardMedia} from "@material-ui/core";
 import React from "react";
 import {Character} from "../domain";
-import "./CharacterCard.css";
+import "../styles/components/CharacterCard.css";
 import { useHistory } from "react-router-dom";
 
 

@@ -1,0 +1,6 @@
+.SelectedCharacter{
+    overflow-y: scroll;
+    padding: 124px 64px 64px 64px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
