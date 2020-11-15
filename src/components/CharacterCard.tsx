@@ -1,12 +1,19 @@
-import {Card, CardActionArea, CardContent, CardHeader, CardMedia} from "@material-ui/core";
+import {Card, CardActionArea, CardHeader, CardMedia} from "@material-ui/core";
 import React from "react";
 import {Character} from "../domain";
 import "./CharacterCard.css";
+import { useHistory } from "react-router-dom";
 
-export const CharacterCard = ({id, name, image, gender, created}: Character) => {
+
+export const CharacterCard = ({id, name, image}: Character) => {
+    const history = useHistory();
+
+    const handleClick = () => {
+        history.push(`characters/${id}`);
+    }
 
     return (
-        <div className="CharacterCard">
+        <div className="CharacterCard" onClick={handleClick}>
             <Card className="CharacterCard__card">
                 <CardActionArea>
                     <CardHeader className="CharacterCard__card__header" title={name} subheader={`id: ${id}`}/>
