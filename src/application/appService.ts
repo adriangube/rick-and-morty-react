@@ -1,7 +1,7 @@
 import {api, ApiProxy} from "../api-proxy";
 import {Character, CharactersResponse} from "../domain";
 import {fetchCharactersIfNeeded} from "./characters";
-import {fetchSelectedCharacterIfNeeded} from "./selectedCharacter";
+import {fetchSelectedCharacter, fetchSelectedCharacterIfNeeded} from "./selectedCharacter";
 
 class AppService implements  ApiProxy{
     constructor(apiProxy: ApiProxy){
@@ -11,7 +11,7 @@ class AppService implements  ApiProxy{
     private apiProxy: ApiProxy;
 
     getCharacter(id: number): Promise<Character> {
-        return fetchSelectedCharacterIfNeeded(this.apiProxy, id);
+        return fetchSelectedCharacter(this.apiProxy, id) as any;
     }
 
     getCharacters(): Promise<CharactersResponse> {
