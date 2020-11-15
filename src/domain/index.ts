@@ -1,1 +1,1 @@
-export default "dummy"
+export * from "./character";
