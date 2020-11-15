@@ -1,6 +1,8 @@
 import React, {useEffect} from "react";
 import {appService, charactersStateSelector} from "../application";
 import {useSelector} from "react-redux";
+import {CharacterCard} from "../components";
+import "./Characters..css";
 
 export const Characters = () => {
 
@@ -13,9 +15,7 @@ export const Characters = () => {
     return (
         <div className="Characters">
             {charactersState?.state?.results?.map((character) =>
-                <div>
-                    {character.name}
-                </div>
+                <CharacterCard key={character?.id} { ...character} />
             )}
         </div>
     )

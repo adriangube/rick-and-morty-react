@@ -1,4 +1,5 @@
 import React from "react";
+import "./SelectedCharacter.css";
 
 interface SelectedCharacterProps {
 

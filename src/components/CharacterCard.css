@@ -1,0 +1,22 @@
+@import "../styles/index.css";
+
+.CharacterCard .CharacterCard__card{
+    background-color: var(--secondary-background-color);
+    color: var(--font-color);
+}
+
+.CharacterCard .CharacterCard__card__header .MuiCardHeader-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CharacterCard .CharacterCard__card__header .MuiCardHeader-subheader{
+    color: var(--font-color);
+}
+
+.CharacterCard .CharacterCard__card__media{
+    height: 300px;
+    width: 100%;
+}
+
