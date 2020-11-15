@@ -14,8 +14,8 @@ class AppService implements  ApiProxy{
         return fetchSelectedCharacter(this.apiProxy, id) as any;
     }
 
-    getCharacters(): Promise<CharactersResponse> {
-        return fetchCharactersIfNeeded(this.apiProxy);
+    getCharacters(page?: number): Promise<CharactersResponse> {
+        return fetchCharactersIfNeeded(this.apiProxy, page);
     }
 }
 

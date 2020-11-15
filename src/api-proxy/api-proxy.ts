@@ -1,6 +1,6 @@
 import {Character, CharactersResponse} from "../domain";
 
 export interface ApiProxy{
-    getCharacters(): Promise<CharactersResponse>;
+    getCharacters(page?: number): Promise<CharactersResponse>;
     getCharacter(id: number): Promise<Character>
 }
