@@ -103,7 +103,6 @@ export const SelectedCharacter = () => {
                             </Button>
                         </div>
                     </div>
-
                 </Card>
             )}
         </div>
