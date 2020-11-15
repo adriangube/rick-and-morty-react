@@ -16,7 +16,7 @@ export const CharacterCard = ({id, name, image}: Character) => {
         <div className="CharacterCard" onClick={handleClick}>
             <Card className="CharacterCard__card">
                 <CardActionArea>
-                    <CardHeader className="CharacterCard__card__header" title={name} subheader={`id: ${id}`}/>
+                    <CardHeader className="CharacterCard__card__header" title={name}/>
                     <CardMedia className="CharacterCard__card__media" image={image} title={`${name}-image`}/>
                 </CardActionArea>
             </Card>
