@@ -1,1 +1,2 @@
-export default "dummy"
+export * from "./routes";
+export * from "./AppRouter";

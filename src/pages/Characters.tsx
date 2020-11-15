@@ -1,13 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
+import {appService, charactersStateSelector} from "../application";
+import {useSelector} from "react-redux";
 
-interface CharactersProps {
+export const Characters = () => {
 
-}
+    const charactersState = useSelector(charactersStateSelector);
 
-export const Characters = ({}: CharactersProps) => {
+    useEffect(() => {
+        appService.getCharacters();
+    }, [])
+
     return (
         <div className="Characters">
-
+            {charactersState?.state?.results?.map((character) =>
+                <div>
+                    {character.name}
+                </div>
+            )}
         </div>
     )
 }
