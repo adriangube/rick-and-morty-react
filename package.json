@@ -15,6 +15,7 @@
   "homepage": "https://github.com/adriangube",
   "private": true,
   "dependencies": {
+    "axios": "^0.21.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",

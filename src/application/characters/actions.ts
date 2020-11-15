@@ -1,32 +1,32 @@
-import {Action, Character} from "../../domain";
+import {Action, CharactersResponse} from "../../domain";
 import {
-    ERROR_SELECTED_CHARACTER,
-    INVALIDATE_SELECTED_CHARACTER,
-    RECEIVE_SELECTED_CHARACTER,
-    REQUEST_SELECTED_CHARACTER
+    ERROR_CHARACTERS,
+    INVALIDATE_CHARACTERS,
+    RECEIVE_CHARACTERS,
+    REQUEST_CHARACTERS
 } from "../../store";
 
-export const requestSelectedCharacter = (): Action => {
+export const requestCharacters = (): Action => {
     return {
-        type: REQUEST_SELECTED_CHARACTER
+        type: REQUEST_CHARACTERS
     }
 }
 
-export const invalidateSelectedCharacter = (): Action => {
+export const invalidateCharacters = (): Action => {
     return {
-        type: INVALIDATE_SELECTED_CHARACTER
+        type: INVALIDATE_CHARACTERS
     }
 }
 
-export const receiveSelectedCharacter = (payload: Character): Action<Character> => {
+export const receiveCharacters = (payload: CharactersResponse): Action<CharactersResponse> => {
     return {
-        type: RECEIVE_SELECTED_CHARACTER,
+        type: RECEIVE_CHARACTERS,
         payload
     }
 }
 
-export const errorSelectedCharacter = (): Action => {
+export const errorCharacters = (): Action => {
     return {
-        type: ERROR_SELECTED_CHARACTER
+        type: ERROR_CHARACTERS
     }
 }
