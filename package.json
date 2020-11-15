@@ -2,6 +2,8 @@
   "name": "rick-and-morty-react",
   "version": "0.1.0",
   "keywords": ["react", "pwa", "rick&morty", "typescript", "side-project", "javascript", "redux", "graphQL"],
+  "author": "Adrián Guillén Bermúdez (adrianguillenbermudez@gmail.com)",
+  "homepage": "https://github.com/adriangube",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
