@@ -22,8 +22,8 @@ export class Api implements ApiProxy {
         return axios.get(path).then((r) => r?.data);
     }
 
-    getCharacters(): Promise<CharactersResponse> {
-        const path = this.withPath(`/character`);
+    getCharacters(page?: number): Promise<CharactersResponse> {
+        const path = page ? this.withPath(`/character?page=${page}`) : this.withPath(`/character`);
         return axios?.get(path).then((r) => r?.data);
     }
 }

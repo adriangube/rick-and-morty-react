@@ -4,9 +4,9 @@ import {errorCharacters, receiveCharacters, requestCharacters} from "./actions";
 import {shouldFetch} from "../shouldFetch";
 import {charactersStateSelector} from "./selectors";
 
-export const fetchCharacters = (proxy: ApiProxy) => {
+export const fetchCharacters = (proxy: ApiProxy, page?: number) => {
     dispatch(requestCharacters());
-    return proxy.getCharacters()
+    return proxy.getCharacters(page)
         .then((res) => {
             dispatch(receiveCharacters(res));
             return res;
@@ -16,9 +16,10 @@ export const fetchCharacters = (proxy: ApiProxy) => {
         })
 }
 
-export const fetchCharactersIfNeeded = (proxy: ApiProxy) => {
+export const fetchCharactersIfNeeded = (proxy: ApiProxy, page?: number) => {
     if(shouldFetch(getState(), charactersStateSelector)){
-        return fetchCharacters(proxy) as any;
+
+        return fetchCharacters(proxy, page) as any;
     }
     return Promise.resolve();
 }

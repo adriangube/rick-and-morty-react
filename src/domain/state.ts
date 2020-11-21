@@ -15,4 +15,5 @@ export interface Action<Payload = any> {
 export interface State{
     characters: AsyncState<CharactersResponse>;
     selectedCharacter: AsyncState<Character>;
+    selectedPage: number;
 }

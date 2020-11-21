@@ -1,0 +1,93 @@
+.SelectedCharacter{
+    overflow-y: scroll;
+    padding: 124px 64px 64px 64px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SelectedCharacter .SelectedCharacter__card{
+    background-color: var(--secondary-background-color);
+    color: var(--font-color);
+    display: flex;
+    flex-direction: row;
+    min-width: 800px;
+    min-height: 600px;
+}
+
+.SelectedCharacter .SelectedCharacter__card .SelectedCharacter__media {
+    display: flex;
+    flex: 1;
+}
+
+.SelectedCharacter .SelectedCharacter__card .SelectedCharacter__media .SelectedCharacter__media__image{
+    width: 100%;
+}
+
+.SelectedCharacter .SelectedCharacter__card .SelectedCharacter__content{
+    display: flex;
+    flex: 1;
+    padding: 32px;
+    flex-direction: column;
+}
+
+.SelectedCharacter .SelectedCharacter__card .SelectedCharacter__content .SelectedCharacter__header{
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--terciary--font-color);
+    margin-bottom: 32px;
+}
+
+.SelectedCharacter .SelectedCharacter__card .SelectedCharacter__content .SelectedCharacter__field{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.SelectedCharacter .SelectedCharacter__card .SelectedCharacter__content .SelectedCharacter__field .SelectedCharacter__label{
+    margin-right: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary-font-color);
+}
+
+.SelectedCharacter .SelectedCharacter__card .SelectedCharacter__content .SelectedCharacter__field .SelectedCharacter__value{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.SelectedCharacter .SelectedCharacter__card .SelectedCharacter__content .SelectedCharacter__actions{
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.SelectedCharacter .SelectedCharacter__card .SelectedCharacter__content .SelectedCharacter__actions #go-back-button{
+    background-color: var(--forth-background-color);
+    color: var(--font-color);
+    height: fit-content;
+}
+
+@media only screen and (max-width: 870px){
+    .SelectedCharacter .SelectedCharacter__card{
+        min-width: 400px;
+        min-height: 600px;
+        flex-direction: column;
+    }
+    .SelectedCharacter .SelectedCharacter__card .SelectedCharacter__media{
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .SelectedCharacter .SelectedCharacter__card{
+        min-width: 200px;
+        min-height: 600px;
+        flex-direction: column;
+    }
+}
