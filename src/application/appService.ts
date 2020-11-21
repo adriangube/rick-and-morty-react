@@ -1,7 +1,7 @@
 import {api, ApiProxy} from "../api-proxy";
 import {Character, CharactersResponse} from "../domain";
 import {fetchCharactersIfNeeded} from "./characters";
-import {fetchSelectedCharacter, fetchSelectedCharacterIfNeeded} from "./selectedCharacter";
+import {fetchSelectedCharacter} from "./selectedCharacter";
 
 class AppService implements  ApiProxy{
     constructor(apiProxy: ApiProxy){
