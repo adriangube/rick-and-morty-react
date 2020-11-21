@@ -1,6 +1,12 @@
 import {CircularProgress} from "@material-ui/core";
 import React, {Fragment, useEffect} from "react";
-import {appService, charactersStateSelector, invalidateCharacters} from "../application";
+import {
+    appService,
+    charactersStateSelector,
+    invalidateCharacters,
+    selectedPageSelector,
+    setSelectedPage
+} from "../application";
 import {useSelector} from "react-redux";
 import {CharacterCard} from "../components";
 import "../styles/pages/Characters..css";
@@ -10,10 +16,12 @@ import {dispatch} from "../store";
 export const Characters = () => {
 
     const charactersState = useSelector(charactersStateSelector);
+    const selectedPage = useSelector(selectedPageSelector);
     const isFetching = charactersState?.isFetching;
 
     const handleChange = (event: any, number: number) => {
         dispatch(invalidateCharacters());
+        dispatch(setSelectedPage(number));
         appService.getCharacters(number);
     }
 
@@ -36,7 +44,7 @@ export const Characters = () => {
                         )}
                     </div>
                     <div className="Characters__pagination">
-                        <Pagination count={charactersState?.state?.info?.pages} variant="outlined"  onChange={handleChange}/>
+                        <Pagination count={charactersState?.state?.info?.pages} variant="outlined" page={selectedPage}  onChange={handleChange}/>
                     </div>
                 </Fragment>
             )}
