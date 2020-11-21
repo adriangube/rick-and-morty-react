@@ -1,0 +1,41 @@
+@import "../index.css";
+
+.Characters{
+    min-height: 100vh;
+    overflow-y: scroll;
+    padding: 124px 64px 64px 64px;
+    box-sizing: border-box;
+
+}
+
+.Characters .Characters__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 50px;
+    row-gap: 50px;
+    box-sizing: border-box;
+}
+
+.Characters .Characters__pagination{
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+.Characters .Characters__pagination .MuiPaginationItem-page{
+    color: white;
+}
+
+.Characters .Characters__pagination .MuiPaginationItem-ellipsis{
+    color: white;
+}
+
+.Characters .Characters__pagination .Mui-selected{
+    background-color: var(--secondary-background-color);
+}
+
+@media only screen and (max-width: 400px){
+    .Characters .Characters__list{
+        grid-template-columns: 1fr;
+    }
+}

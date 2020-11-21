@@ -1,0 +1,16 @@
+@import "../index.css";
+
+.AppHeader .AppHeader__app__bar{
+    background-color: var(--secondary-background-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.AppHeader .AppHeader__avatar{
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.AppHeader .AppHeader__title{
+    width: 100%;
+}
