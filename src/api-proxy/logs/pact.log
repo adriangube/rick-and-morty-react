@@ -1,0 +1,370 @@
+I, [2020-11-21T19:05:36.383543 #46233]  INFO -- : Registered expected interaction GET /character
+D, [2020-11-21T19:05:36.383885 #46233] DEBUG -- : {
+  "description": "Get Characters",
+  "providerState": "Characters exist",
+  "request": {
+    "method": "GET",
+    "path": "/character"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": {
+      "json_class": "Pact::SomethingLike",
+      "contents": {
+        "info": {
+          "count": 600,
+          "pages": 20
+        },
+        "results": [
+          {
+            "id": 1,
+            "name": "Rick Sanchez",
+            "status": "Alive",
+            "species": "Human",
+            "type": "",
+            "gender": "Male",
+            "origin": {
+              "name": "Earth (C-137)",
+              "url": "https://rickandmortyapi.com/api/location/1"
+            },
+            "location": {
+              "name": "Earth (Replacement Dimension)",
+              "url": "https://rickandmortyapi.com/api/location/20"
+            },
+            "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+            "episode": [
+              "https://rickandmortyapi.com/api/episode/1",
+              "https://rickandmortyapi.com/api/episode/2",
+              "https://rickandmortyapi.com/api/episode/3",
+              "https://rickandmortyapi.com/api/episode/4",
+              "https://rickandmortyapi.com/api/episode/5",
+              "https://rickandmortyapi.com/api/episode/6",
+              "https://rickandmortyapi.com/api/episode/7",
+              "https://rickandmortyapi.com/api/episode/8",
+              "https://rickandmortyapi.com/api/episode/9",
+              "https://rickandmortyapi.com/api/episode/10",
+              "https://rickandmortyapi.com/api/episode/11",
+              "https://rickandmortyapi.com/api/episode/12",
+              "https://rickandmortyapi.com/api/episode/13",
+              "https://rickandmortyapi.com/api/episode/14",
+              "https://rickandmortyapi.com/api/episode/15",
+              "https://rickandmortyapi.com/api/episode/16",
+              "https://rickandmortyapi.com/api/episode/17",
+              "https://rickandmortyapi.com/api/episode/18",
+              "https://rickandmortyapi.com/api/episode/19",
+              "https://rickandmortyapi.com/api/episode/20",
+              "https://rickandmortyapi.com/api/episode/21",
+              "https://rickandmortyapi.com/api/episode/22",
+              "https://rickandmortyapi.com/api/episode/23",
+              "https://rickandmortyapi.com/api/episode/24",
+              "https://rickandmortyapi.com/api/episode/25",
+              "https://rickandmortyapi.com/api/episode/26",
+              "https://rickandmortyapi.com/api/episode/27",
+              "https://rickandmortyapi.com/api/episode/28",
+              "https://rickandmortyapi.com/api/episode/29",
+              "https://rickandmortyapi.com/api/episode/30",
+              "https://rickandmortyapi.com/api/episode/31",
+              "https://rickandmortyapi.com/api/episode/32",
+              "https://rickandmortyapi.com/api/episode/33",
+              "https://rickandmortyapi.com/api/episode/34",
+              "https://rickandmortyapi.com/api/episode/35",
+              "https://rickandmortyapi.com/api/episode/36",
+              "https://rickandmortyapi.com/api/episode/37",
+              "https://rickandmortyapi.com/api/episode/38",
+              "https://rickandmortyapi.com/api/episode/39",
+              "https://rickandmortyapi.com/api/episode/40",
+              "https://rickandmortyapi.com/api/episode/41"
+            ],
+            "url": [
+              "https://rickandmortyapi.com/api/character/1"
+            ],
+            "created": "2017-11-04T18:48:46.250Z"
+          }
+        ]
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2020-11-21T19:05:36.400307 #46233]  INFO -- : Received request GET /character
+D, [2020-11-21T19:05:36.400406 #46233] DEBUG -- : {
+  "path": "/character",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Referer": "http://localhost/",
+    "User-Agent": "Mozilla/5.0 (darwin) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.4.0",
+    "Accept-Language": "en",
+    "Origin": "http://localhost",
+    "Host": "localhost:9000",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2020-11-21T19:05:36.400758 #46233]  INFO -- : Found matching response for GET /character
+D, [2020-11-21T19:05:36.400934 #46233] DEBUG -- : {
+  "status": 200,
+  "headers": {
+  },
+  "body": {
+    "json_class": "Pact::SomethingLike",
+    "contents": {
+      "info": {
+        "count": 600,
+        "pages": 20
+      },
+      "results": [
+        {
+          "id": 1,
+          "name": "Rick Sanchez",
+          "status": "Alive",
+          "species": "Human",
+          "type": "",
+          "gender": "Male",
+          "origin": {
+            "name": "Earth (C-137)",
+            "url": "https://rickandmortyapi.com/api/location/1"
+          },
+          "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+          },
+          "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+          "episode": [
+            "https://rickandmortyapi.com/api/episode/1",
+            "https://rickandmortyapi.com/api/episode/2",
+            "https://rickandmortyapi.com/api/episode/3",
+            "https://rickandmortyapi.com/api/episode/4",
+            "https://rickandmortyapi.com/api/episode/5",
+            "https://rickandmortyapi.com/api/episode/6",
+            "https://rickandmortyapi.com/api/episode/7",
+            "https://rickandmortyapi.com/api/episode/8",
+            "https://rickandmortyapi.com/api/episode/9",
+            "https://rickandmortyapi.com/api/episode/10",
+            "https://rickandmortyapi.com/api/episode/11",
+            "https://rickandmortyapi.com/api/episode/12",
+            "https://rickandmortyapi.com/api/episode/13",
+            "https://rickandmortyapi.com/api/episode/14",
+            "https://rickandmortyapi.com/api/episode/15",
+            "https://rickandmortyapi.com/api/episode/16",
+            "https://rickandmortyapi.com/api/episode/17",
+            "https://rickandmortyapi.com/api/episode/18",
+            "https://rickandmortyapi.com/api/episode/19",
+            "https://rickandmortyapi.com/api/episode/20",
+            "https://rickandmortyapi.com/api/episode/21",
+            "https://rickandmortyapi.com/api/episode/22",
+            "https://rickandmortyapi.com/api/episode/23",
+            "https://rickandmortyapi.com/api/episode/24",
+            "https://rickandmortyapi.com/api/episode/25",
+            "https://rickandmortyapi.com/api/episode/26",
+            "https://rickandmortyapi.com/api/episode/27",
+            "https://rickandmortyapi.com/api/episode/28",
+            "https://rickandmortyapi.com/api/episode/29",
+            "https://rickandmortyapi.com/api/episode/30",
+            "https://rickandmortyapi.com/api/episode/31",
+            "https://rickandmortyapi.com/api/episode/32",
+            "https://rickandmortyapi.com/api/episode/33",
+            "https://rickandmortyapi.com/api/episode/34",
+            "https://rickandmortyapi.com/api/episode/35",
+            "https://rickandmortyapi.com/api/episode/36",
+            "https://rickandmortyapi.com/api/episode/37",
+            "https://rickandmortyapi.com/api/episode/38",
+            "https://rickandmortyapi.com/api/episode/39",
+            "https://rickandmortyapi.com/api/episode/40",
+            "https://rickandmortyapi.com/api/episode/41"
+          ],
+          "url": [
+            "https://rickandmortyapi.com/api/character/1"
+          ],
+          "created": "2017-11-04T18:48:46.250Z"
+        }
+      ]
+    }
+  }
+}
+I, [2020-11-21T19:05:36.414724 #46233]  INFO -- : Verifying - interactions matched
+I, [2020-11-21T19:05:36.418482 #46233]  INFO -- : Cleared interactions
+I, [2020-11-21T19:05:36.423751 #46233]  INFO -- : Registered expected interaction GET /character/1
+D, [2020-11-21T19:05:36.423934 #46233] DEBUG -- : {
+  "description": "Get character with id=1",
+  "providerState": "Character 1 exist",
+  "request": {
+    "method": "GET",
+    "path": "/character/1"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": {
+      "json_class": "Pact::SomethingLike",
+      "contents": {
+        "id": 1,
+        "name": "Rick Sanchez",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+          "name": "Earth (C-137)",
+          "url": "https://rickandmortyapi.com/api/location/1"
+        },
+        "location": {
+          "name": "Earth (Replacement Dimension)",
+          "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+        "episode": [
+          "https://rickandmortyapi.com/api/episode/1",
+          "https://rickandmortyapi.com/api/episode/2",
+          "https://rickandmortyapi.com/api/episode/3",
+          "https://rickandmortyapi.com/api/episode/4",
+          "https://rickandmortyapi.com/api/episode/5",
+          "https://rickandmortyapi.com/api/episode/6",
+          "https://rickandmortyapi.com/api/episode/7",
+          "https://rickandmortyapi.com/api/episode/8",
+          "https://rickandmortyapi.com/api/episode/9",
+          "https://rickandmortyapi.com/api/episode/10",
+          "https://rickandmortyapi.com/api/episode/11",
+          "https://rickandmortyapi.com/api/episode/12",
+          "https://rickandmortyapi.com/api/episode/13",
+          "https://rickandmortyapi.com/api/episode/14",
+          "https://rickandmortyapi.com/api/episode/15",
+          "https://rickandmortyapi.com/api/episode/16",
+          "https://rickandmortyapi.com/api/episode/17",
+          "https://rickandmortyapi.com/api/episode/18",
+          "https://rickandmortyapi.com/api/episode/19",
+          "https://rickandmortyapi.com/api/episode/20",
+          "https://rickandmortyapi.com/api/episode/21",
+          "https://rickandmortyapi.com/api/episode/22",
+          "https://rickandmortyapi.com/api/episode/23",
+          "https://rickandmortyapi.com/api/episode/24",
+          "https://rickandmortyapi.com/api/episode/25",
+          "https://rickandmortyapi.com/api/episode/26",
+          "https://rickandmortyapi.com/api/episode/27",
+          "https://rickandmortyapi.com/api/episode/28",
+          "https://rickandmortyapi.com/api/episode/29",
+          "https://rickandmortyapi.com/api/episode/30",
+          "https://rickandmortyapi.com/api/episode/31",
+          "https://rickandmortyapi.com/api/episode/32",
+          "https://rickandmortyapi.com/api/episode/33",
+          "https://rickandmortyapi.com/api/episode/34",
+          "https://rickandmortyapi.com/api/episode/35",
+          "https://rickandmortyapi.com/api/episode/36",
+          "https://rickandmortyapi.com/api/episode/37",
+          "https://rickandmortyapi.com/api/episode/38",
+          "https://rickandmortyapi.com/api/episode/39",
+          "https://rickandmortyapi.com/api/episode/40",
+          "https://rickandmortyapi.com/api/episode/41"
+        ],
+        "url": [
+          "https://rickandmortyapi.com/api/character/1"
+        ],
+        "created": "2017-11-04T18:48:46.250Z"
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2020-11-21T19:05:36.429865 #46233]  INFO -- : Received request GET /character/1
+D, [2020-11-21T19:05:36.429983 #46233] DEBUG -- : {
+  "path": "/character/1",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Referer": "http://localhost/",
+    "User-Agent": "Mozilla/5.0 (darwin) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.4.0",
+    "Accept-Language": "en",
+    "Origin": "http://localhost",
+    "Host": "localhost:9000",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2020-11-21T19:05:36.430134 #46233]  INFO -- : Found matching response for GET /character/1
+D, [2020-11-21T19:05:36.430294 #46233] DEBUG -- : {
+  "status": 200,
+  "headers": {
+  },
+  "body": {
+    "json_class": "Pact::SomethingLike",
+    "contents": {
+      "id": 1,
+      "name": "Rick Sanchez",
+      "status": "Alive",
+      "species": "Human",
+      "type": "",
+      "gender": "Male",
+      "origin": {
+        "name": "Earth (C-137)",
+        "url": "https://rickandmortyapi.com/api/location/1"
+      },
+      "location": {
+        "name": "Earth (Replacement Dimension)",
+        "url": "https://rickandmortyapi.com/api/location/20"
+      },
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "episode": [
+        "https://rickandmortyapi.com/api/episode/1",
+        "https://rickandmortyapi.com/api/episode/2",
+        "https://rickandmortyapi.com/api/episode/3",
+        "https://rickandmortyapi.com/api/episode/4",
+        "https://rickandmortyapi.com/api/episode/5",
+        "https://rickandmortyapi.com/api/episode/6",
+        "https://rickandmortyapi.com/api/episode/7",
+        "https://rickandmortyapi.com/api/episode/8",
+        "https://rickandmortyapi.com/api/episode/9",
+        "https://rickandmortyapi.com/api/episode/10",
+        "https://rickandmortyapi.com/api/episode/11",
+        "https://rickandmortyapi.com/api/episode/12",
+        "https://rickandmortyapi.com/api/episode/13",
+        "https://rickandmortyapi.com/api/episode/14",
+        "https://rickandmortyapi.com/api/episode/15",
+        "https://rickandmortyapi.com/api/episode/16",
+        "https://rickandmortyapi.com/api/episode/17",
+        "https://rickandmortyapi.com/api/episode/18",
+        "https://rickandmortyapi.com/api/episode/19",
+        "https://rickandmortyapi.com/api/episode/20",
+        "https://rickandmortyapi.com/api/episode/21",
+        "https://rickandmortyapi.com/api/episode/22",
+        "https://rickandmortyapi.com/api/episode/23",
+        "https://rickandmortyapi.com/api/episode/24",
+        "https://rickandmortyapi.com/api/episode/25",
+        "https://rickandmortyapi.com/api/episode/26",
+        "https://rickandmortyapi.com/api/episode/27",
+        "https://rickandmortyapi.com/api/episode/28",
+        "https://rickandmortyapi.com/api/episode/29",
+        "https://rickandmortyapi.com/api/episode/30",
+        "https://rickandmortyapi.com/api/episode/31",
+        "https://rickandmortyapi.com/api/episode/32",
+        "https://rickandmortyapi.com/api/episode/33",
+        "https://rickandmortyapi.com/api/episode/34",
+        "https://rickandmortyapi.com/api/episode/35",
+        "https://rickandmortyapi.com/api/episode/36",
+        "https://rickandmortyapi.com/api/episode/37",
+        "https://rickandmortyapi.com/api/episode/38",
+        "https://rickandmortyapi.com/api/episode/39",
+        "https://rickandmortyapi.com/api/episode/40",
+        "https://rickandmortyapi.com/api/episode/41"
+      ],
+      "url": [
+        "https://rickandmortyapi.com/api/character/1"
+      ],
+      "created": "2017-11-04T18:48:46.250Z"
+    }
+  }
+}
+I, [2020-11-21T19:05:36.434954 #46233]  INFO -- : Verifying - interactions matched
+I, [2020-11-21T19:05:36.438639 #46233]  INFO -- : Cleared interactions
+I, [2020-11-21T19:05:36.442840 #46233]  INFO -- : Updating pact for rickMortyApi at /Users/adrianguillenbermudez/Workplaces/react/rick-and-morty-react/src/api-proxy/pacts/rickmortyreact-rickmortyapi.json
+I, [2020-11-21T19:05:36.443930 #46233]  INFO -- : *****************************************************************************
+I, [2020-11-21T19:05:36.444138 #46233]  INFO -- : Updating existing file ./Users/adrianguillenbermudez/Workplaces/react/rick-and-morty-react/src/api-proxy/pacts/rickmortyreact-rickmortyapi.json as pactfile_write_mode is :update
+I, [2020-11-21T19:05:36.444171 #46233]  INFO -- : Only interactions defined in this test run will be updated.
+I, [2020-11-21T19:05:36.444191 #46233]  INFO -- : As interactions are identified by description and provider state, pleased note that if either of these have changed, the old interactions won't be removed from the pact file until the specs are next run with :pactfile_write_mode => :overwrite.
+I, [2020-11-21T19:05:36.444209 #46233]  INFO -- : *****************************************************************************

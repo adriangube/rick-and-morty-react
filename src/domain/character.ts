@@ -24,15 +24,15 @@ export interface Character{
     location: Location;
     image: string;
     episode: string[];
-    url: string[];
+    url: string | string[];
     created: string;
 }
 
 export interface ResponseInfo {
     count: number;
     pages: number;
-    next: string;
-    prev: string;
+    next?: string;
+    prev?: string;
 }
 
 export interface CharactersResponse {
