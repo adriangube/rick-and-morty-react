@@ -1,4 +1,4 @@
-import {api, ApiProxy} from "../api-proxy";
+import {api, ApiProxy, apiGraphql} from "../api-proxy";
 import {Character, CharactersResponse} from "../domain";
 import {fetchCharactersIfNeeded} from "./characters";
 import {fetchSelectedCharacter} from "./selectedCharacter";
@@ -19,4 +19,4 @@ class AppService implements  ApiProxy{
     }
 }
 
-export const appService = new AppService(api)
+export const appService = new AppService(apiGraphql)
