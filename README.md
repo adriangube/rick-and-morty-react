@@ -5,7 +5,6 @@ This progressive web app (PWA) is a Rick and Morty character selector made with 
 With this application you will be able to choose one of the more than 600 characters available and see his detail information.
 
 ![Character List](demo/character-list.png)
-![Character Detail](demo/character-detail.png)
 
 This project was the core project that I use to made a serie of three internal workshops for the [uxland](https://www.uxland.es/) members during the last 2 month of 2020.
 In these workshops I made a talk about [Pact.js](https://github.com/pact-foundation/pact-js), another about [GraphQL](https://graphql.org/), and about [React](https://reactjs.org/).
