@@ -14,9 +14,11 @@
   "author": "Adrián Guillén Bermúdez (adrianguillenbermudez@gmail.com)",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.3.4",
     "@material-ui/core": "^4.11.0",
     "@material-ui/lab": "^4.0.0-alpha.56",
     "axios": "^0.21.0",
+    "graphql": "^15.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
@@ -50,8 +52,8 @@
     "@types/react-dom": "^16.9.9",
     "@types/react-redux": "^7.1.11",
     "@types/react-router-dom": "^5.1.6",
-    "typescript": "^4.0.5",
-    "jest-pact": "^0.8.1"
+    "jest-pact": "^0.8.1",
+    "typescript": "^4.0.5"
   },
   "scripts": {
     "env:local": "ncp .env.local .env",
